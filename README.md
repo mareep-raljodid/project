@@ -19,3 +19,16 @@ Memory: O(n)
 
 
 
+Further ideas:
+We can have a DS to track folder, their respective files and its contents to be able to
+track everything in-memory.
+Ideal datastructure is a tree with nodes reflecting of they are files or a folder. See below:
+
+TreeNode* node; 
+
+struct TreeNode
+{
+  vector<TreeNode*> children;
+  bool isfolder = true;
+  string filecontents = "":
+};
